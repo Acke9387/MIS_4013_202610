@@ -1,11 +1,30 @@
 ﻿
-    Console.WriteLine("Please input the lower bound value <<");
-    string answer = Console.ReadLine();
-    int lowerBound = int.Parse(answer);
+Console.WriteLine("Please input the lower bound value <<");
+string answer = Console.ReadLine();
+int lowerBound = 0;
 
-    Console.WriteLine("Please input the upper bound value <<");
-    answer = Console.ReadLine();
-    int upperBound = int.Parse(answer);
+lowerBound = ValidateInput(answer);
+
+//try
+//{
+//    result = int.Parse(a);
+//}
+//catch (FormatException ex)
+//{
+//    Console.WriteLine("Please enter a number and not a string");
+//}
+//catch (OverflowException ex)
+//{
+//    Console.WriteLine("Your value exceeds the limits");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine("I don't know what went wrong.");
+//}
+
+Console.WriteLine("Please input the upper bound value <<");
+answer = Console.ReadLine();
+int upperBound = ValidateInput(answer, "Invalid input for upper bound, please try again <<");
 
 for (int i = 0; i < int.MaxValue; i++)
 {
@@ -22,7 +41,7 @@ for (int i = 0; i < int.MaxValue; i++)
         Console.WriteLine($"Please guess a number between {lowerBound} and {upperBound} <<");
         string usersGuess = Console.ReadLine();
         //int guess = Convert.ToInt32(usersGuess);
-        guess = int.Parse(usersGuess);
+        guess = ValidateInput(usersGuess, "Invalid input for guess, please try again <<");
         count++;
         //count = count + 1;
         //count += 1;
@@ -60,7 +79,7 @@ for (int i = 0; i < int.MaxValue; i++)
     Console.WriteLine("Do you want to try your luck again? yes or no <<");
     answer = Console.ReadLine();
 
-    if (answer != "yes") // (answer =="no")
+    if (answer != "yes") // (a =="no")
     {
         break;
         i = int.MaxValue;
@@ -69,3 +88,17 @@ for (int i = 0; i < int.MaxValue; i++)
 }
 
 Console.WriteLine("Thank you for playing our game, come back soon!");
+
+
+///
+static int ValidateInput(string a, string msg = "Invalid input for lower bound, please try again <<")
+{
+    int result;
+    while (int.TryParse(a, out result) == false)
+    {
+        Console.WriteLine(msg);
+        a = Console.ReadLine();
+    }
+
+   return result;
+}
