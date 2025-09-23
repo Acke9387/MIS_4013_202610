@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tip Calculator (Walkthrough)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Tip Calculator</h1>
+    <button id="themeBtn" aria-label="Toggle dark mode">🌗 Theme</button>
+  </header>
+
+  <main>
+    <section class="card">
+      <label>Bill Amount ($)
+        <input id="bill" type="number" min="0" step="0.01" placeholder="e.g., 42.50">
+      </label>
+
+      <label>Tip Percentage
+        <input id="tip" type="range" min="0" max="30" value="20">
+        <span id="tipLabel">20%</span>
+      </label>
+
+      <label>Split Between People
+        <input id="people" type="number" min="1" step="1" value="1">
+      </label>
+    </section>
+
+    <section class="card totals">
+      <div><strong>Total:</strong> $<span id="total">0.00</span></div>
+      <div><strong>Per person:</strong> $<span id="perPerson">0.00</span></div>
+      <p id="message" class="hint">Enter a bill amount to get started.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built together in class • MIS 4013</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

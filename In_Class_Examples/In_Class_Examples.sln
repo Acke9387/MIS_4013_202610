@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro_to_HTML_CSS", "Intro_to_HTML_CSS\Intro_to_HTML_CSS.csproj", "{3BCDC205-CE25-4EE8-A934-29CC94AD4362}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro_to_JS_Tip_Calculator", "Intro_to_JS_Tip_Calculator\Intro_to_JS_Tip_Calculator.csproj", "{5731D082-2CD3-493F-87DC-336B8C624898}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3BCDC205-CE25-4EE8-A934-29CC94AD4362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BCDC205-CE25-4EE8-A934-29CC94AD4362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BCDC205-CE25-4EE8-A934-29CC94AD4362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5731D082-2CD3-493F-87DC-336B8C624898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5731D082-2CD3-493F-87DC-336B8C624898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5731D082-2CD3-493F-87DC-336B8C624898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5731D082-2CD3-493F-87DC-336B8C624898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
