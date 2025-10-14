@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro_to_JS_Tip_Calculator"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro_to_Bootstrap", "Intro_to_Bootstrap\Intro_to_Bootstrap.csproj", "{7A056F6E-D82C-4B2C-8E0E-40377B1659EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro_to_MVC", "Intro_to_MVC\Intro_to_MVC.csproj", "{8F6AF06E-2B5D-41C2-AC59-B552374CF7C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7A056F6E-D82C-4B2C-8E0E-40377B1659EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A056F6E-D82C-4B2C-8E0E-40377B1659EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A056F6E-D82C-4B2C-8E0E-40377B1659EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F6AF06E-2B5D-41C2-AC59-B552374CF7C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F6AF06E-2B5D-41C2-AC59-B552374CF7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F6AF06E-2B5D-41C2-AC59-B552374CF7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F6AF06E-2B5D-41C2-AC59-B552374CF7C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

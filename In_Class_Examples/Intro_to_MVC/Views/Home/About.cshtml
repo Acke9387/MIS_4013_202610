@@ -1,0 +1,24 @@
+﻿@model List<Intro_to_MVC.Models.Developer>
+
+@{
+    ViewData["Title"] = "About";
+}
+
+<div class="container">
+    @foreach (var developer in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@developer.Name</h5>
+                <p class="card-text">@developer.InterestingFact</p>
+                <a href="mailto:@developer.Email" class="card-link">Email Me</a>
+            </div>
+        </div>
+
+    }
+</div>
+@* <h1>About the developer</h1>
+<p>My name is @Model.Name and I love coding!</p>
+<p>@Model.InterestingFact</p>
+<p>Contact me at <a href="mailto:@Model.Email">Email me</a> *@
+
