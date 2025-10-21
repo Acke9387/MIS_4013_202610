@@ -1,0 +1,15 @@
+﻿@model IEnumerable<MVC_Intro.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Students</h1>
+
+<ul>
+
+    @foreach (var item in Model)
+    {
+        <li><a href="mailto:@item.Email">@item.Name </a></li>
+    }
+</ul>
