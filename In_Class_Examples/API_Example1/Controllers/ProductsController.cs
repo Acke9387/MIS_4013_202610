@@ -48,7 +48,7 @@ namespace API_Example1.Controllers
         }
 
 
-        [HttpGet("category/{category}", Name = "GetProductsByCategory")]
+        [HttpGet("{category}", Name = "GetProductsByCategory")]
         public ActionResult<IEnumerable<Product>> GetByCategory(string category)
         {
             if (string.IsNullOrWhiteSpace(category))
