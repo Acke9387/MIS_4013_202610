@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Intro_to_MVC_EF.Models.Spotify>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Top Music from Spotify</h1>
+
+<div class="row g-4">
+
+
+
+    @foreach (var item in Model)
+    {
+        <div class="card">
+
+            <div class="card-body">
+                <h5 class="card-title">@item.Title</h5>
+                <p class="card-text">
+                    @item.Artist created in @item.Year
+                    <a asp-action="Details" asp-route-id="@item.Index">Details</a>
+                </p>
+            </div>
+        </div>
+
+    }
+
+</div>

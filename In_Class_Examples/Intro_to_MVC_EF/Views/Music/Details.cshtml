@@ -1,0 +1,102 @@
+﻿@model Intro_to_MVC_EF.Models.Spotify
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Spotify</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Artist)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Artist)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TopGenre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TopGenre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BeatsPerMinute)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BeatsPerMinute)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Energy)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Energy)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Danceability)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Danceability)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Loudness)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Loudness)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Liveness)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Liveness)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Valence)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Valence)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Acousticness)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Acousticness)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Speechiness)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Speechiness)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Popularity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Popularity)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Index">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
