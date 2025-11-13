@@ -1,0 +1,103 @@
+﻿@model IEnumerable<Module2_Exam_Review.Models.Wine>
+
+@{
+    ViewData["Title"] = "Vineyard";
+}
+
+<h1>Best Wines</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Designation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Points)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Province)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Region1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Region2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TasterName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TasterTwitterHandle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Variety)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Winery)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Designation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Points)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Province)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Region1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Region2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TasterName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TasterTwitterHandle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Variety)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Winery)
+            </td>
+            <td>               
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,98 @@
+﻿@model Module2_Exam_Review.Models.Wine
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Wine</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Country" class="control-label"></label>
+                <input asp-for="Country" class="form-control" />
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Designation" class="control-label"></label>
+                <input asp-for="Designation" class="form-control" />
+                <span asp-validation-for="Designation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Points" class="control-label"></label>
+                <input asp-for="Points" class="form-control" />
+                <span asp-validation-for="Points" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Province" class="control-label"></label>
+                <input asp-for="Province" class="form-control" />
+                <span asp-validation-for="Province" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Region1" class="control-label"></label>
+                <input asp-for="Region1" class="form-control" />
+                <span asp-validation-for="Region1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Region2" class="control-label"></label>
+                <input asp-for="Region2" class="form-control" />
+                <span asp-validation-for="Region2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TasterName" class="control-label"></label>
+                <input asp-for="TasterName" class="form-control" />
+                <span asp-validation-for="TasterName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TasterTwitterHandle" class="control-label"></label>
+                <input asp-for="TasterTwitterHandle" class="form-control" />
+                <span asp-validation-for="TasterTwitterHandle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Variety" class="control-label"></label>
+                <input asp-for="Variety" class="form-control" />
+                <span asp-validation-for="Variety" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Winery" class="control-label"></label>
+                <input asp-for="Winery" class="form-control" />
+                <span asp-validation-for="Winery" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

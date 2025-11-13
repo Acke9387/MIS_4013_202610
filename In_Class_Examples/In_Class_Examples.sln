@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Example1", "API_Example
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro_to_MVC_EF", "Intro_to_MVC_EF\Intro_to_MVC_EF.csproj", "{325B62C0-7890-4560-A48C-D3A052218489}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module2_Exam_Review", "Module2_Exam_Review\Module2_Exam_Review.csproj", "{7BB24A36-10E3-405A-BF5D-451762C33BF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{325B62C0-7890-4560-A48C-D3A052218489}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{325B62C0-7890-4560-A48C-D3A052218489}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{325B62C0-7890-4560-A48C-D3A052218489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB24A36-10E3-405A-BF5D-451762C33BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB24A36-10E3-405A-BF5D-451762C33BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB24A36-10E3-405A-BF5D-451762C33BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB24A36-10E3-405A-BF5D-451762C33BF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
